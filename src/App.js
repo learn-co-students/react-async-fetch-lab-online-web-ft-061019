@@ -10,7 +10,10 @@ export default class App extends React.Component {
     render(){
         return(
             <div>
-               <span> {this.state.astros.map(astro => astro.name)} </span> 
+                {/* MAP AND KEY TO LIST IN LI */}
+               <ul> {this.state.astros.map(astro => 
+                <li key={astro.name}> {astro.name} </li>)} 
+               </ul> 
                 
             </div>
         )
